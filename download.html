@@ -17,6 +17,7 @@
 <meta property="og:url" content="https://seedlock.no/download.html">
 <meta property="og:image" content="https://seedlock.no/assets/seedlock-social-preview.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://seedlock.no/download.html">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,6 +36,7 @@
 <h1 style="font-size:clamp(40px,6vw,64px)"><span class="accent">Down</span>load</h1>
 <p class="lead">SeedLock is available for Linux, macOS, Windows and Android (apk). Every button opens the newest release on GitHub, so it is always up to date.</p>
 <p class="mono" id="release-info" style="font-size:14px"></p>
+<p class="mono" style="font-size:14px">Privacy: to show the newest version, this page asks GitHub for the latest release, so your browser contacts GitHub, as it does when you download. Nothing else is sent, and nothing is tracked.</p>
 </div>
 </section>
 <section style="padding:24px 0 24px">
@@ -82,15 +84,15 @@
 <li style="margin:0 0 8px">Safer still, check the signature of <span class="mono">SHA256SUMS.txt</span>. Download <span class="mono">SHA256SUMS.txt.asc</span> from the same release and <span class="mono">release-key.asc</span> from the <span class="mono">docs</span> folder on GitHub. It must say <b>Good signature</b>, and the primary key fingerprint must be the one above. The User guide explains it step by step.</li>
 </ol>
 <h3 style="font-size:20px;margin:8px 0 12px">Command line</h3>
-<div class="mono" style="background:rgba(0,0,0,.22);border:1px solid rgba(255,254,252,.18);border-radius:8px;padding:16px;margin:0 0 20px;font-size:13px;line-height:1.8;overflow-x:auto;white-space:pre;color:#fffefc"><span style="color:#bb7125"># Linux</span>
+<div class="mono" style="background:rgba(0,0,0,.22);border:1px solid rgba(255,254,252,.18);border-radius:8px;padding:16px;margin:0 0 20px;font-size:13px;line-height:1.8;overflow-x:auto;white-space:pre;color:#fffefc"><span style="color:#fffefc;font-weight:500"># Linux</span>
 sha256sum seedlock-&lt;version&gt;-linux-x86_64
-<span style="color:#bb7125"># macOS</span>
+<span style="color:#fffefc;font-weight:500"># macOS</span>
 shasum -a 256 seedlock-&lt;version&gt;-macos
-<span style="color:#bb7125"># Windows (PowerShell)</span>
+<span style="color:#fffefc;font-weight:500"># Windows (PowerShell)</span>
 (Get-FileHash seedlock-&lt;version&gt;-windows-x86_64.exe).Hash
-<span style="color:#bb7125"># Android apk (on the computer you downloaded it to, Linux)</span>
+<span style="color:#fffefc;font-weight:500"># Android apk (on the computer you downloaded it to, Linux)</span>
 sha256sum seedlock-&lt;version&gt;-android.apk
-<span style="color:#bb7125"># Signature of SHA256SUMS.txt (all systems, needs GnuPG)</span>
+<span style="color:#fffefc;font-weight:500"># Signature of SHA256SUMS.txt (all systems, needs GnuPG)</span>
 gpg --import release-key.asc
 gpg --verify SHA256SUMS.txt.asc SHA256SUMS.txt</div>
 <p>Not independently audited: try it on testnet, or with a small amount, first.</p>

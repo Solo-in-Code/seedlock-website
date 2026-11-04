@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SeedLock – Donate</title>
-<meta name="description" content="Support SeedLock with a bitcoin donation, on Lightning or on-chain.">
+<meta name="description" content="Support SeedLock with a bitcoin donation, on Lightning or with Silent Payments.">
 <meta name="theme-color" content="#2b3a40">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="/assets/favicon-48.png" sizes="48x48">
@@ -13,10 +13,11 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SeedLock">
 <meta property="og:title" content="SeedLock – Donate">
-<meta property="og:description" content="Support SeedLock with a bitcoin donation, on Lightning or on-chain.">
+<meta property="og:description" content="Support SeedLock with a bitcoin donation, on Lightning or with Silent Payments.">
 <meta property="og:url" content="https://seedlock.no/donate.html">
 <meta property="og:image" content="https://seedlock.no/assets/seedlock-social-preview.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://seedlock.no/donate.html">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,6 +48,14 @@
 <p id="ln-name" class="mono" style="display:none;font-size:15px;margin:0 0 16px"></p>
 <div><button type="button" id="ln-copy" class="btn alt" style="font-family:inherit;font-size:17px;cursor:pointer">Copy offer</button></div>
 </div>
+<div class="card" style="flex:1 1 440px;min-width:0;max-width:720px">
+<span class="tag">// silent payments</span>
+<h2><span class="accent">Bitcoin</span> on-chain (Silent Payments)</h2>
+<p>One reusable address. Every payment to it lands on a new, unlinked address on the blockchain, so nobody can see who donated or how much. It works with wallets that support Silent Payments, such as Cake Wallet and Sparrow.</p>
+<div id="sp-qr" style="background:#fffefc;padding:12px;border-radius:8px;width:fit-content;min-width:184px;min-height:184px;display:flex;align-items:center;justify-content:center;color:#2b3a40;font-size:14px">QR code</div>
+<p id="sp-text" class="mono" style="font-size:13px;overflow-wrap:anywhere;margin:16px 0">sp1qqws3jkkdgzgfwu55akwd2c7xk6lw4g8mw0m8hf4639pjrp2putcrzqm0euvqcstnwk7s9paa7x5cvetdntqv4hfmkk3wpa3uujtvez6c7ydvkm6r</p>
+<div><button type="button" id="sp-copy" class="btn alt" style="font-family:inherit;font-size:17px;cursor:pointer">Copy address</button></div>
+</div>
 </div>
 </section>
 <section class="row tight" style="padding-bottom:72px">
@@ -54,7 +63,7 @@
 <span class="tag">// privacy</span>
 <h2><span class="accent">Your</span> privacy</h2>
 <p>This site has no tracking, no cookies and no outside scripts. The QR codes are made in your browser.</p>
-<p>Lightning payments cannot be refunded or reversed, so check the offer before you send. More ways to donate will come later.</p>
+<p>Bitcoin payments cannot be refunded or reversed, so check the offer or the address before you send. If your wallet cannot pay an <span class="mono">sp1</span> address, it will refuse to send, and no money is lost.</p>
 </div>
 </section>
 </main>

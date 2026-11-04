@@ -57,3 +57,9 @@ p{color:#fffefc}
 .don>summary::-webkit-details-marker{display:none}
 .don>summary:hover,.don[open]>summary{background:rgba(255,254,252,.12)}
 .don .pop{position:absolute;right:0;top:100%;margin-top:6px;background:#2b3a40;border:1px solid #bb7125;border-radius:8px;padding:10px 20px;font-family:var(--font-mono);font-size:14px;color:#fffefc;white-space:nowrap;z-index:5}
+.dd>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.dd>summary::-webkit-details-marker{display:none}
+.dd .chev{transition:transform .2s}
+.dd[open] .chev{transform:rotate(180deg)}
+.btn{font-weight:700}
+@media (max-width:480px){.menu{gap:0}.menu a,.don>summary{padding:12px 9px;font-size:15px}.nav .wrap{padding-left:16px;padding-right:16px}}

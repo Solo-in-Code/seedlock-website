@@ -17,6 +17,7 @@
 <meta property="og:url" content="https://seedlock.no/start.html">
 <meta property="og:image" content="https://seedlock.no/assets/seedlock-social-preview.png">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://seedlock.no/start.html">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,6 +35,7 @@
 <span class="tag">// start</span>
 <h1 style="font-size:clamp(40px,6vw,64px)"><span class="accent">Get</span> started</h1>
 <p class="lead">SeedLock lives on a computer that is never online. Download it, copy it over, and make your first backup.</p>
+<p class="mono" style="font-size:14px">Privacy: to show the newest version, this page asks GitHub for the latest release, so your browser contacts GitHub, as it does when you download. Nothing else is sent, and nothing is tracked.</p>
 </div>
 </section>
 
@@ -65,17 +67,17 @@
 <h3 style="font-size:22px;margin:32px 0 12px"><span class="accent">1. Download</span></h3>
 <p>On the online computer, open the <a href="https://github.com/Solo-in-Code/SeedLock/releases" target="_blank" rel="noopener noreferrer" style="color:#fffefc;text-decoration:underline;text-decoration-color:#bb7125;text-underline-offset:3px">Releases page</a>. Under the newest release, download <span class="mono">SHA256SUMS.txt</span>, its signature (<span class="mono">SHA256SUMS.txt.asc</span>), the release key (<span class="mono">release-key.asc</span>, in the <span class="mono">docs</span> folder) and the program for your offline computer:</p>
 <div style="margin-bottom:8px">
-<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Windows (64-bit)</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">seedlock-0.3.0-windows-x86_64.exe</span></div>
-<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Mac (Apple chip and Intel)</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">seedlock-0.3.0-macos</span></div>
-<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Linux (64-bit Intel or AMD)</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">seedlock-0.3.0-linux-x86_64</span></div>
-<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Android (preview)</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">seedlock-0.3.0-android.apk</span><span style="flex:1 1 100%;font-size:14px;color:#fffefc">For a spare phone kept in airplane mode.</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Windows (64-bit)</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">seedlock-&lt;version&gt;-windows-x86_64.exe</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Mac (Apple chip and Intel)</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">seedlock-&lt;version&gt;-macos</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Linux (64-bit Intel or AMD)</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">seedlock-&lt;version&gt;-linux-x86_64</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Android (preview)</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">seedlock-&lt;version&gt;-android.apk</span><span style="flex:1 1 100%;font-size:14px;color:#fffefc">For a spare phone kept in airplane mode.</span></div>
 </div>
 <h3 style="font-size:22px;margin:32px 0 12px"><span class="accent">2. Check</span>  the download (SHA-256 and GPG)</h3>
 <p>Open a terminal (PowerShell on Windows) in your Downloads folder and compute the program&rsquo;s SHA-256 fingerprint:</p>
 <div style="margin-bottom:16px">
-<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Windows</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">(Get-FileHash seedlock-0.3.0-windows-x86_64.exe).Hash</span></div>
-<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Mac</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">shasum -a 256 seedlock-0.3.0-macos</span></div>
-<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Linux</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">sha256sum seedlock-0.3.0-linux-x86_64</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Windows</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">(Get-FileHash seedlock-&lt;version&gt;-windows-x86_64.exe).Hash</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Mac</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">shasum -a 256 seedlock-&lt;version&gt;-macos</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding:10px 0;border-top:1px solid rgba(255,254,252,.18)"><span style="flex:0 0 190px;color:#fffefc">Linux</span><span class="mono" style="font-size:14px;overflow-wrap:anywhere;color:#fffefc">sha256sum seedlock-&lt;version&gt;-linux-x86_64</span></div>
 </div>
 <p>Compare the long number with the one next to the program&rsquo;s name in <span class="mono">SHA256SUMS.txt</span>. They must match exactly.</p>
 <p>For the highest security, also check the GPG signature. It proves that the checksum list itself comes from the maintainer:</p>
@@ -101,7 +103,7 @@ gpg --verify SHA256SUMS.txt.asc SHA256SUMS.txt</div>
 </div>
 <p>macOS and Windows show a security warning the first time, because SeedLock is independent software. The <a href="https://github.com/Solo-in-Code/SeedLock/blob/main/README.md" target="_blank" rel="noopener noreferrer" style="color:#fffefc;text-decoration:underline;text-decoration-color:#bb7125;text-underline-offset:3px">full guide</a> explains how to open it safely.</p>
 <p>SeedLock works only offline: if the computer is connected to a network, it shows <span class="mono">SEEDLOCK WORKS ONLY OFFLINE</span> and waits until you disconnect. You can also build the program yourself from the source code.</p>
-<p style="border-left:3px solid #bb7125;padding-left:16px"><b>Status:</b> version 0.3.0, not independently audited. Try it on testnet, or with a small amount, first.</p>
+<p style="border-left:3px solid #bb7125;padding-left:16px"><b>Status:</b> not independently audited. Try it on testnet, or with a small amount, first.</p>
 <a class="btn" href="https://github.com/Solo-in-Code/SeedLock/releases" target="_blank" rel="noopener noreferrer">Download</a><a class="btn alt" href="https://github.com/Solo-in-Code/SeedLock/blob/main/README.md" target="_blank" rel="noopener noreferrer">Full installation guide</a>
 </div>
 </details>
@@ -128,7 +130,7 @@ gpg --verify SHA256SUMS.txt.asc SHA256SUMS.txt</div>
 <h2><span class="accent">Android</span> phone</h2>
 <p>SeedLock for Android is a preview. It turns a spare phone into a portable, air-gapped signing device. It makes the same encrypted backups and signs the same payments as the computer version.</p>
 <ol style="margin:0 0 20px;padding-left:22px">
-<li style="margin:0 0 12px;color:#fffefc">Download <span class="mono" style="overflow-wrap:anywhere">seedlock-0.3.0-android.apk</span> from the <a href="https://github.com/Solo-in-Code/SeedLock/releases" target="_blank" rel="noopener noreferrer" style="color:#fffefc;text-decoration:underline;text-decoration-color:#bb7125;text-underline-offset:3px">Releases</a> page. It is in the same signed list as the computer programs.</li>
+<li style="margin:0 0 12px;color:#fffefc">Download <span class="mono" style="overflow-wrap:anywhere">seedlock-&lt;version&gt;-android.apk</span> from the <a href="https://github.com/Solo-in-Code/SeedLock/releases" target="_blank" rel="noopener noreferrer" style="color:#fffefc;text-decoration:underline;text-decoration-color:#bb7125;text-underline-offset:3px">Releases</a> page. It is in the same signed list as the computer programs.</li>
 <li style="margin:0 0 12px;color:#fffefc">Install it on the phone. The Android guide explains how.</li>
 <li style="margin:0 0 12px;color:#fffefc"><b>Strictly offline, with a network kill switch.</b> Keep the phone in airplane mode, with Wi-Fi, mobile data and Bluetooth off. If a connection accidentally turns on while the app is open, a built-in kill switch instantly closes every screen.</li>
 </ol>
@@ -245,6 +247,6 @@ recover-env/bin/pip install argon2-cffi pynacl mnemonic</div>
 </div>
 </div></footer>
 </div>
-
+<script src="assets/release.js" defer></script>
 </body>
 </html>

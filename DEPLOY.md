@@ -37,5 +37,10 @@ before you use them, in case GitHub has changed them.
 
 ## 5. Updating
 Change a file, commit, push. The site updates in about a minute.
-The Download page reads the newest GitHub release by itself.
-Only the Start page has the version number (0.3.0) written by hand.
+The Start and Download pages read the newest GitHub release by themselves,
+so a new release needs no change to the website.
+The home page pictures (terminal and phone) show "0.3.2" by hand: they are illustrations.
+
+## Files you edit by hand
+- assets/donate-config.js: the Lightning offer, the Silent Payments address,
+  and (later) the human-readable name for BIP-353.

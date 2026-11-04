@@ -6,7 +6,7 @@
       var q = qrcode(0, 'M'); q.addData(text); q.make();
       el.innerHTML = q.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
       var s = el.querySelector('svg');
-      s.style.width = '100%'; s.style.height = 'auto'; s.style.maxWidth = '260px';
+      s.style.width = '100%'; s.style.height = 'auto'; s.style.maxWidth = '300px';
       s.setAttribute('role', 'img'); s.setAttribute('aria-label', 'QR code');
     } catch (e) { el.textContent = 'QR code unavailable'; }
   }
@@ -30,6 +30,16 @@
     $('ln-copy').addEventListener('click', function () { copy(this, offer); });
     var name = $('ln-name');
     if (name) { if (C.bip353) { name.textContent = '\u20BF' + C.bip353; name.style.display = 'block'; } else name.style.display = 'none'; }
+  }
+  // Silent Payments (BIP-352)
+  var sp = (C.silentPayment || '').trim();
+  if ($('sp-qr')) {
+    if (!sp) soon('sp', 'Silent Payments donations are coming soon.');
+    else {
+      qr($('sp-qr'), 'bitcoin:' + sp);
+      $('sp-text').textContent = sp;
+      $('sp-copy').addEventListener('click', function () { copy(this, sp); });
+    }
   }
   // On-chain: random address from the list (only if the page has that card)
   if ($('oc-qr')) {

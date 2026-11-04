@@ -8,7 +8,7 @@
       var version = String(rel.tag_name || '').replace(/^v/, '');
       var assets = rel.assets || [];
       var keys = { windows: 'windows', macos: 'macos', linux: 'linux', android: 'android' };
-      document.querySelectorAll('.card').forEach(function (card) {
+      document.querySelectorAll('#download-page .card').forEach(function (card) {
         var tag = card.querySelector('.tag');
         if (!tag) return;
         var os = tag.textContent.replace('//', '').trim().toLowerCase();
