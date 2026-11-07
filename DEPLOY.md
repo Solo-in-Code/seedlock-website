@@ -39,7 +39,7 @@ before you use them, in case GitHub has changed them.
 Change a file, commit, push. The site updates in about a minute.
 The Start and Download pages read the newest GitHub release by themselves,
 so a new release needs no change to the website.
-The home page pictures (terminal and phone) show "0.3.2" by hand: they are illustrations.
+The home page pictures (terminal and phone) also show the newest version by themselves.
 
 ## Files you edit by hand
 - assets/donate-config.js: the Lightning offer, the Silent Payments address,
